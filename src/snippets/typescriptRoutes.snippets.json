@@ -1,0 +1,12 @@
+import express from 'express';
+import ${1:ModelName}Controller from '../controllers/Author.controller';
+
+const router = express.Router();
+
+router.post('/create', AuthorController.createAuthor);
+router.get('/get/:${2:VariableName}Id', AuthorController.readAuthor);
+router.get('/get/', AuthorController.readAll);
+router.patch('/update/:${2:VariableName}Id', AuthorController.updateAuthor);
+router.delete('/delete/:${2:VariableName}Id', AuthorController.deleteAuthor);
+
+export = router;
